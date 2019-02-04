@@ -1,19 +1,30 @@
 /* Header */
 header {
-  background-color: blue;
+  background-color: none;
+  position: absolute;
+  width: 100%;
 }
 
 .clasaLogo {
-  background-color: orange;
+  background-color: none!important;
 }
 .clasaNavigatie {
-  background-color: green!important;
+
   background-size: cover;
+  color: white;
 }
 
 .banner-area {
   background: url('https://images.pexels.com/photos/270756/pexels-photo-270756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center;
   background-size: cover;
-  position: relative;
-  height: 900px;
+}
+#dimBanner {
+  height: 953px;
+}
+
+ul li {
+  padding: 0px 40px 0 40px;
+}
+.alignBannerText {
+  text-align: center!important;
 }
