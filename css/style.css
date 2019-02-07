@@ -19,7 +19,7 @@ header {
   background-size: cover;
 }
 #dimBanner {
-  height: 953px;
+  height: 700px;
 }
 
 ul li {
@@ -28,3 +28,12 @@ ul li {
 .alignBannerText {
   text-align: center!important;
 }
+.overlay-img {
+	background: rgba(0, 145, 255,0.82);
+}
+
+.posContCards {
+	margin-top: -40px;
+}
+
+	
