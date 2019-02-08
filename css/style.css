@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /* Header */
 header {
   background-color: none;
@@ -29,11 +32,15 @@ ul li {
   text-align: center!important;
 }
 .overlay-img {
-	background: rgba(0, 145, 255,0.82);
+	background: rgba(0, 145, 255,0.75);
 }
 
 .posContCards {
 	margin-top: -40px;
 }
 
-	
+
+
+.zonaPrezentare2 {
+  margin-top: 30px;
+}
