@@ -18,17 +18,17 @@ header {
 #navbarNavDropdown ul li> a {
   color: #FFFFFF;
 }
-
 .behavior-header {
   background: rgba(0,0,0,0.7);
   transition: all 0.5s;
 }
-
-/*zona banner*/
+button
+/* banner area*/
 .banner-area {
   background: url('https://images.pexels.com/photos/270756/pexels-photo-270756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center;
   background-size: cover;
 }
+
 #dimBanner {
   height: 500px;
 }
@@ -47,9 +47,21 @@ ul li {
 }
 
 /*presentation area*/
-
 .zonaPrezentare2 {
   margin-top: 30px;
+}
+
+/* progress bars */
+#section4 {
+  margin-top: 20px;
+}
+div.progress {
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background: #F1F1F1;
 }
 
 /* Button Top */
@@ -72,3 +84,4 @@ ul li {
 #myBtn:hover {
   background-color: #555;
 }
+/* Button Top */
