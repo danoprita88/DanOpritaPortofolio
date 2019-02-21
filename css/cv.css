@@ -18,6 +18,11 @@
 .bikeOprita {
   font-size: 40px;
 }
+.zonaLogo a:hover {
+  text-decoration: none;
+  color: #D35D31;
+}
+
 .zonaConnections {
   width: 60%;
   float: right;

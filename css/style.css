@@ -59,6 +59,13 @@ ul li {
 .zonaPrezentare2 {
   margin-top: 30px;
 }
+#MTB {
+  display: none;
+}
+#Hike {
+  display: none;
+}
+
 
 /*Image slides*/
 
@@ -74,7 +81,7 @@ position: relative;
 overflow: hidden ;
 float: left;
 padding: 3px;
-border: #666 solid 1px;
+
 }
 .slider-inner img {
 display: none;
@@ -130,3 +137,43 @@ footer {
   background-color: #555;
 }
 /* Button Top */
+
+/*ecran mai mic de 600px*/
+@media only screen and (min-width: 900px) {
+  .containerMTB {
+  width: 740px;
+  margin: 40px auto;
+  overflow: auto;
+  }
+  .slider-inner {
+  width: 700px;
+  height: 400px;
+  position: relative;
+  overflow: hidden ;
+  float: left;
+  padding: 3px;
+  }
+  .slider-inner img {
+  display: none;
+  width: 700px;
+  height: 400px;
+  }
+  .slider-inner img.active {
+    display: inline-block;
+  }
+  .prev, .next {
+    float: left;
+    margin-top: 180px;
+    cursor: pointer;
+  }
+  .prev {
+    position: relative;
+    margin-right: -45px;
+    z-index: 100;
+  }
+  .next {
+    position: relative;
+    margin-left: -45px;
+    z-index: 100;
+  }
+}

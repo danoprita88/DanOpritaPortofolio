@@ -25,3 +25,31 @@ $(window).scroll(function(){
 });
 
 //https://www.youtube.com/watch?v=J2HLW4A40X8
+
+$(document).ready(function(){
+  $('.next').on('click', function(){
+    var currentImg = $('.active');
+    var nextImg = currentImg.next(); //next() este o functie jQuery
+    if(nextImg.length) {
+        currentImg.removeClass('active').css('z-index', -10);
+        nextImg.addClass('active').css('z-index', 10);
+    }
+  });
+  $('.prev').on('click', function(){
+    var currentImg = $('.active');
+    var prevImg = currentImg.prev(); //next() este o functie jQuery
+    if(prevImg.length) {
+        currentImg.removeClass('active').css('z-index', -10);
+        prevImg.addClass('active').css('z-index', 10);
+    }
+  });
+});
+
+$(document).ready(function() {
+  $('#linkHike').on('click', function() {
+    console.log('hola');
+    $('#MTB').hide();
+    $('#linkHike').show();
+  });
+
+});
