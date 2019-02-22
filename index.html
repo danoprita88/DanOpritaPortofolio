@@ -103,20 +103,20 @@
     <div class="container zonaPrezentare2" id="section5">
       <div class="card text-center">
         <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
+          <ul class="nav nav-tabs card-header-tabs tabs">
             <li class="nav-item">
-              <a class="nav-link active" id="linkMTB">MTB</a>
+              <a class="nav-link  tablinks" onclick="hobby(event, 'MTB')">MTB</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="linkHike">Hike</a>
+              <a class="nav-link tablinks" onclick="hobby(event, 'Hike')">Hike</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="linkSki">Ski</a>
+              <a class="nav-link active tablinks" onclick="hobby(event, 'Ski')">Ski</a>
             </li>
           </ul>
         </div>
 
-        <div class="card-body activeoutdoor" id="MTB">
+        <div class="card-body tabcontent" id="MTB">
           <h5 class="card-title">Mountain biking</h5>
           <div class="containerMTB">
       			<div class="slider-out">
@@ -130,24 +130,38 @@
               <img src="img/arrow-right.png" class="next" alt="Next">
       			</div>
       		</div>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
 
-        <div class="card-body" id="Hike">
-          <h5 class="card-title">Mountain biking</h5>
+        <div class="card-body tabcontent" id="Hike">
+          <h5 class="card-title">Hike</h5>
           <div class="containerMTB">
       			<div class="slider-out">
               <img src="img/arrow-left.png" class="prev" alt="Prev">
               <div class="slider-inner">
-                <img src="img/MTB/1.jpg" class="active">
-                <img src="img/MTB/2.jpg">
-                <img src="img/MTB/3.jpg">
-                <img src="img/MTB/4.jpg">
+                <img src="img/Hike/1.JPG" class="active">
+                <img src="img/Hike/2.JPG">
+                <img src="img/Hike/3.JPG">
+                <img src="img/Hike/4.JPG">
               </div>
               <img src="img/arrow-right.png" class="next" alt="Next">
       			</div>
       		</div>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+
+        <div class="card-body tabcontent" id="Ski">
+          <h5 class="card-title">Ski</h5>
+          <div class="containerMTB">
+      			<div class="slider-out">
+              <img src="img/arrow-left.png" class="prev" alt="Prev">
+              <div class="slider-inner">
+                <img src="img/SKI/1.JPG" class="active">
+                <img src="img/SKI/2.JPG">
+                <img src="img/SKI/3.JPG">
+                <img src="img/SKI/4.JPG">
+              </div>
+              <img src="img/arrow-right.png" class="next" alt="Next">
+      			</div>
+      		</div>
         </div>
       </div>
     </div>

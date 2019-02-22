@@ -24,8 +24,7 @@ $(window).scroll(function(){
     }
 });
 
-//https://www.youtube.com/watch?v=J2HLW4A40X8
-
+//Image slider
 $(document).ready(function(){
   $('.next').on('click', function(){
     var currentImg = $('.active');
@@ -45,11 +44,17 @@ $(document).ready(function(){
   });
 });
 
-$(document).ready(function() {
-  $('#linkHike').on('click', function() {
-    console.log('hola');
-    $('#MTB').hide();
-    $('#linkHike').show();
-  });
-
-});
+//Easy Tabs
+function hobby(evt, hobbyName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(hobbyName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
