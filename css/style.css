@@ -126,13 +126,8 @@ height: 300px;
 /* Contact me */
 #contactdan {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
-
-/* Footer */
-footer {
-  background: #F1F1F1;
-}
-
 
 /* Button Top */
 #myBtn {
@@ -155,6 +150,34 @@ footer {
   background-color: #555;
 }
 /* Button Top */
+
+/* Footer */
+footer {
+  background: #2C3E50;
+}
+
+.connectionsfooter {
+  width: 60%;
+  float: right;
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 60px;
+  color: white;
+}
+.iconsfooter {
+  width: auto;
+  display: flex;
+}
+.iconSocialMedia i {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  font-size: x-large;
+}
+.footerstyle {
+  color: #FFFFFF;
+  text-align: center;
+}
 
 /*ecran mai mic de 600px*/
 @media only screen and (min-width: 900px) {

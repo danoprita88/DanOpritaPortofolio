@@ -24,7 +24,7 @@ $(window).scroll(function(){
     }
 });
 
-//Image slider
+//Image slider using jQuery
 $(document).ready(function(){
   $('.next').on('click', function(){
     var currentImg = $('.active');
@@ -59,3 +59,8 @@ function hobby(evt, hobbyName) { //functia se exectua la click pe link
   document.getElementById(hobbyName).style.display = "block"; //afisam hobby-ul selectat, rezultat din parametru al functiei activate de click
   evt.currentTarget.className += " active"; //ii dam clasa activa evenimentului curent.
 }
+
+//buton formular contact
+$('#contactdanbutton').click( function() {
+  alert('Function not available yet. Please use the contact links from the footer!');
+});
