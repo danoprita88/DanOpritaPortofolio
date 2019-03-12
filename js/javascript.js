@@ -36,7 +36,7 @@ $(document).ready(function(){
   });
   $('.prev').on('click', function(){
     var currentImg = $('.active');
-    var prevImg = currentImg.prev(); //next() este o functie jQuery
+    var prevImg = currentImg.prev(); //prev() este o functie jQuery
     if(prevImg.length) {
         currentImg.removeClass('active').css('z-index', -10);
         prevImg.addClass('active').css('z-index', 10);
@@ -45,16 +45,17 @@ $(document).ready(function(){
 });
 
 //Easy Tabs
-function hobby(evt, hobbyName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
+function hobby(evt, hobbyName) { //functia se exectua la click pe link
+  var i, tabcontent, tablinks; // declaram variabilele
+  tabcontent = document.getElementsByClassName("tabcontent"); //definim variabila tabcontent ca fiind egala cu class tabcontent.
   for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+    console.log(tabcontent.length);//tabcontent.length = 3 (adica avem 3 taburi cu clasa tabcontent)
+    tabcontent[i].style.display = "none"; //ascundem toate taburile
   }
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].className = tablinks[i].className.replace("active", ""); //dezactivam toate link-urile acive
   }
-  document.getElementById(hobbyName).style.display = "block";
-  evt.currentTarget.className += " active";
+  document.getElementById(hobbyName).style.display = "block"; //afisam hobby-ul selectat, rezultat din parametru al functiei activate de click
+  evt.currentTarget.className += " active"; //ii dam clasa activa evenimentului curent.
 }

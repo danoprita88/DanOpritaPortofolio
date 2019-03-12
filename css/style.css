@@ -3,7 +3,7 @@ html {
 }
 /* Header */
 header {
-  background-color: none;
+  background: rgba(0,0,0,0.35);
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -21,6 +21,10 @@ header {
 }
 #navbarNavDropdown ul li> a {
   color: #FFFFFF;
+  padding: 3px;
+}
+#navbarNavDropdown ul li> a:hover {
+  border-bottom: 2px solid white;
 }
 .behavior-header {
   background: rgba(0,0,0,0.7);
@@ -36,7 +40,6 @@ header {
   background: url('https://images.pexels.com/photos/270756/pexels-photo-270756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center;
   background-size: cover;
 }
-
 #dimBanner {
   height: 500px;
 }
@@ -49,7 +52,7 @@ ul li {
   margin-top: 130px;
 }
 .overlay-img {
-	background: rgba(0, 145, 255,0.85);
+	background: rgba(0, 145, 255,0.1);
 }
 .posContCards {
 	margin-top: 20px;
@@ -59,13 +62,12 @@ ul li {
 .zonaPrezentare2 {
   margin-top: 30px;
 }
-#MTB {
+#Ski {
   display: none;
 }
 #Hike {
   display: none;
 }
-
 
 /*Image slides*/
 
@@ -107,9 +109,19 @@ height: 300px;
   z-index: 100;
 }
 
-
-
-
+/* Lightbox gallery */
+.gallery_mtb {
+  margin: 10px 50px;
+}
+.gallery_mtb img {
+  transition: 1s;
+  padding: 15px;
+  width: 200px;
+}
+.gallery_mtb img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
 
 /* Contact me */
 #contactdan {
