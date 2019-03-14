@@ -22,7 +22,6 @@
   text-decoration: none;
   color: #D35D31;
 }
-
 .zonaConnections {
   width: 60%;
   float: right;
@@ -42,7 +41,17 @@
   margin: 10px;
   font-size: x-large;
 }
-
+#dancvlink {
+  font-size: 12px;
+  border: 1px solid black;
+  width: 100px;
+  margin: auto;
+  text-align: center;
+}
+#contactdetails {
+  font-size: 13px;
+  margin-left: 10px;
+}
 /*Continut*/
 
 .zonaDate {
