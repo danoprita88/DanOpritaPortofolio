@@ -98,11 +98,12 @@ hr {
   box-shadow: 5px 5px 5px grey;
   cursor: pointer;
 }
-
 #detailedSkills {
   display: none;
 }
-
+.aplicare-skill {
+  font-size: 12px;
+}
 /*Zona Experienta*/
 
 .zonaExperienta:hover {
@@ -123,7 +124,10 @@ hr {
 }
 
 /*Zona modal*/
-
+.technologie-dan{
+  font-weight: bold;
+  font-size: 16px;
+}
 .detaliiModal {
   display: none;
 }
